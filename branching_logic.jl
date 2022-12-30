@@ -160,7 +160,7 @@ function toproper(x, all = false)
 end
 
 
-function convert_redcap2julia(x)
+function convert_redcap2r(x)
     if !isna(x)
         x = convert_dates_red2r(x)
         x = replace(x, r"\[|\]" => "")
